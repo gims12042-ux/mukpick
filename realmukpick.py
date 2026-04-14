@@ -27,6 +27,9 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 from transformers import pipeline
+def load_sentiment_model():
+    model = pipeline("sentiment-analysis")
+    return model, "huggingface"
 
 
 # ══════════════════════════════════════════════════════════
